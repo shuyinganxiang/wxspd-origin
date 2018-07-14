@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view class='fill-width swiper-box line'>
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="swiper-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  
+  <!-- nav -->
+  <view class='home-nav clearfix'>
+    <view wx:for="{{ navInfo }}" wx:key="navInfo.title" class='nav-item'>
+      <image src="{{item.src}}" class="nav-icon"/>
+      <view class='nav-txt'>{{ item.txt }}</view>
+    </view>
+  </view>
+  <view class='line content'>
+    <view class='top clearfix'>
+      <label class='click-watch fl'>点击试看</label>
+      <label class='ico-moon icon-rightarrow fr'></label>
+      <label class='watch-all fr'>查看全部</label>
+    </view>
+    <view wx:for="{{ resourceList }}" wx:key="resourceList.id" class='content-item'>
+      <image src="{{item.coverImg}}" class="item-left fl"/>
+      <view class='item-right'>
+        <view class='title'>{{ item.title }}</view>
+        <view class='detail'>{{ item.desc }}</view>
+      </view>
+    </view>
+  </view>
+</view>

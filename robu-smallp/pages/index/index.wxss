@@ -1,0 +1,72 @@
+/**index.wxss**/
+.swiper-box swiper{
+  height: 260rpx;
+}
+.swiper-image{
+  width: 100%;
+  height: 100%;
+  background-color: #bfa;
+  border: 1px solid #fba;
+}
+
+/* nav style */
+.home-nav {
+  width: 90%;
+  margin: 20rpx auto;
+  /* background-color: greenyellow; */
+  clear:both;
+}
+.nav-item{
+  padding: 8rpx 0;
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+.nav-icon {
+  width: 84rpx;
+  height: 84rpx;
+}
+.nav-txt {
+  font-size: 12px;
+  padding: 0 12rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/* content style */
+.content{
+  padding: 0 3%;
+}
+.content .top{
+  height: 68rpx;
+  line-height: 68rpx;
+  color: #bbb;
+  font-size: 28rpx;
+}
+.content .top .watch-all{
+  margin-right: 20rpx;
+}
+/* content item style */
+.content .content-item{
+  margin-top: 24rpx;
+}
+.content .content-item .item-left{
+  width: 200rpx;
+  height: 140rpx;
+}
+.content .content-item .item-right{
+  /* width: 200rpx; */
+  height: 140rpx;
+  margin-left: 214rpx;
+  padding-top: 16rpx;
+  /* background-color: greenyellow; */
+}
+.content .content-item .item-right .title{
+  font-size: 32rpx;
+  color: #333;
+} 
+.content .content-item .item-right .detail{
+  font-size: 28rpx;
+  color: #666;
+}

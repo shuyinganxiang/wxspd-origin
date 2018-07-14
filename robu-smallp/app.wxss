@@ -1,0 +1,238 @@
+/**app.wxss**/
+@charset 'utf-8';
+@import "utils/font_icon.wxss";
+.app .ele-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+}
+.app .ele-container > .element {
+  position: relative;
+}
+.app .list {
+	width: 100%;
+	font-size: 16px;
+	color: #222;
+}
+.app .list-container {
+	/* width: 100%; */
+	/* max-width: 100%; */
+	font-size: inherit;
+	color: inherit;
+	/* text-decoration: inherit; */
+	/* overflow: hidden; */
+}
+.app .list-container .list-item {
+	position: relative;
+  height: 140.625rpx;
+	padding-left: 23.4375rpx;
+	margin-bottom: 1px;
+	background-color: #e8e8e8;
+	text-decoration: inherit;
+}
+.app .list-container .list-item:after {
+	content: "";
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  background-color: #f00;
+  vertical-align: middle;
+}
+.app .list .sec-mode .list-item {
+	height: auto;
+	padding-left: 0;
+}
+.app .list-container .title-container {
+	display: inline-block;
+	width: calc(100% - 70px);
+	text-decoration: inherit;
+	/* vertical-align: middle; */
+}
+.app .list .sec-mode .title-container {
+	display: block;
+	width: 100%;
+	padding-top: 3px;
+}
+.app .list-container .title-container view {
+	width: 100%;
+	line-height: 1.6em;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-indent: 11.71875rpx;
+}
+.app .list-container .title-container .title {
+	text-decoration: inherit;
+}
+.app .list-container .title-container .sec-title {
+	display: inline-block;
+	font-size: 28.125rpx;
+	color: #666;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+}
+.app {
+	font-size: 14px;
+}
+.app .element {
+  display: block;
+	width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-color: #222222;
+  border-width: 0;
+}
+.app .text {
+  max-width: 100%;
+  min-height: 10px;
+  line-height: 1.4em;
+  white-space: pre-wrap;
+  word-break: break-all;
+  height: auto !important;
+}
+
+.app .user-center .show-view .empty-span {
+	display: inline-block;
+	width: 58.59375rpx;
+	height: 100%;
+	vertical-align: middle;
+}
+.app .user-center {
+	width: 100% !important;
+	height: auto !important;
+	font-size: 16px;
+  background-color:rgb(243, 243, 243);
+}
+.app .user-center .show-view .cover-thumb {
+  width: 117.1875rpx;
+  height: 117.1875rpx;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.app .user-center .show-view .nickname {
+	vertical-align: middle;
+}
+.app .user-center .show-view .sex {
+	vertical-align: middle;
+}
+.app .usercenter-mode1 .horizontal-router-container1 {
+  overflow: hidden;
+  /*background: #fff;*/
+  font-size: 14px;
+}
+.app .user-center .horizontal-view {
+  border-bottom: 1px solid #eee;
+}
+.app .user-center.with-horizontal-view .horizontal-view {
+  display: block;
+}
+.app .usercenter-mode1 .horizontal-router-container1 > view {
+  line-height: 30px;
+  height: 30px;
+  padding: 7px 10px;
+  color:#666;
+  border-bottom:1px solid #eee;
+  background: #FFF;
+  border-top:1px solid #eee;
+}
+.app .usercenter-mode1 .horizontal-router-container1 .icon-rightarrow {
+  position: relative;
+  width: 20px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 16px;
+  float: right;
+  color: #aaa;
+  margin-top: 6px;
+  margin-right: 0;
+}
+.app .usercenter-mode1 .horizontal-router-container1 label {
+  float: left;
+  font-size:20px;
+  line-height: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.ico-moon {
+  display: inline-block;
+  font-family: 'icomoon' !important;
+}
+.app .album {
+	width: 100% !important;
+	height: auto!important;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+.app .album-container {
+	color: inherit;
+	font-size: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+}
+.app .album.sec-mode {
+	color: #444;
+}
+.app .album-container {
+	color: inherit;
+	font-size: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+}
+.app .album-container image {
+	float: left;
+	width: 100%;
+	height: 240rpx;
+}
+.app .album-container .album-pic {
+  position: relative;
+  float: left;
+  width: 234.375rpx;
+  text-decoration: inherit;
+}
+.background-ele {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/* 公共类 */
+.flex-box {
+  display: flex;
+  flex-direction: row
+}
+
+.fill {
+  width: 100%;
+  height: 100%
+}
+
+.fill-width {
+  width: 100%
+}
+
+.line {
+  margin: 2 auto;
+  border-top: 2px solid #E0E0E0;
+}
+/* clearfix */
+.clearfix:before,.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* float */
+.fl{
+  float: left;
+}
+.fr {
+  float: right;
+}
