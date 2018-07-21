@@ -1,9 +1,12 @@
 {
   "pages":[
-    "pages/myInfo/myInfo",
     "pages/index/index",
+    "pages/message/message",
+    "pages/myInfo/myInfo",
     "pages/logs/logs",
-    "pages/message/message"
+    "pages/listmore/listmore",
+    "pages/resourceList/resourceList",
+    "pages/resourceDetail/resourceDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -36,6 +39,10 @@
       {
         "pagePath": "pages/logs/logs",
         "text": "日志"
+      },
+      {
+        "pagePath": "pages/listmore/listmore",
+        "text": "more"
       }
     ],
     "color": "#999",

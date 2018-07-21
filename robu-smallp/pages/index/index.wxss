@@ -18,7 +18,7 @@
 }
 .nav-item{
   padding: 8rpx 0;
-  width: 25%;
+  width: 33.333%;
   text-align: center;
   float: left;
 }
@@ -36,7 +36,7 @@
 
 /* content style */
 .content{
-  padding: 0 3%;
+  padding: 0 5%;
 }
 .content .top{
   height: 68rpx;
@@ -50,10 +50,12 @@
 /* content item style */
 .content .content-item{
   margin-top: 24rpx;
+  width: 90%;
 }
 .content .content-item .item-left{
   width: 200rpx;
   height: 140rpx;
+  border-radius: 8rpx;
 }
 .content .content-item .item-right{
   /* width: 200rpx; */
@@ -65,8 +67,26 @@
 .content .content-item .item-right .title{
   font-size: 32rpx;
   color: #333;
+  white-space: nowrap; /* 超出部分显示 ...  */
+  overflow: hidden;
+  text-overflow: ellipsis;
 } 
 .content .content-item .item-right .detail{
   font-size: 28rpx;
   color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer{
+  /* width: 100%; */
+  padding: 10rpx 0;
+  text-align: center;
+  color: #bbb;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  background: #eee;
+}
+.footer .cnt{
+  font-size: 24rpx;
 }

@@ -217,8 +217,8 @@
 }
 
 .line {
-  margin: 2 auto;
-  border-top: 2px solid #E0E0E0;
+  margin: 1 auto;
+  border-bottom: 1px solid #E5E5E5;
 }
 /* clearfix */
 .clearfix:before,.clearfix:after {
@@ -235,4 +235,10 @@
 }
 .fr {
   float: right;
+}
+.top-border {
+  width: 100%;
+  border-top: 5px solid #e8e8e8;
+  margin: 0;
+  padding: 0;
 }

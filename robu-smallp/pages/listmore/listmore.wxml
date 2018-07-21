@@ -1,0 +1,32 @@
+
+
+<view>
+  <!-- 
+    //首先设定json文件中:
+
+    //"enablePullDownRefresh": true
+
+    //wxml: 这里显示的数据改为自己的
+  -->
+  <!--true展示数据 false显示图片 -->
+  <view class="cont" style='display:{{show_none}}'>
+    <image class='btnsssssss' src='../../img/img00.png'></image>
+    <text class='con_names'>{{name}}</text>
+  </view>
+
+  <view class='btn_class' wx:for="{{list}}" wx:key="key" bindtap='btn_click' data-types="{{item.id}}" data-dates="{{item.type}}" data-car_base="{{item.title}}" data-money="{{item.id}}" data-switch_name='{{item.title}}'>
+    <label class='order_base'>id：
+      <text class='text_daiban'>{{item.id}}</text>
+    </label>
+    <view class='writes'></view>
+    <label class='dates'>下单时间：{{item.create_time}}</label>
+    <label class='car_base'>车型信息：
+      <text class='inp_text'>{{item.order_car_info}}</text>
+    </label>
+    <label class='money'>消费金额：{{item.pay_price}}</label>
+    <!-- -->
+    <label wx:if="{{item.status_code==2}}" class='ban iconfont icon-shijian'> {{item.order_status}}</label>
+    <label wx:else class='bans iconfont icon-shijians'> {{item.order_status}}</label>
+  </view>
+  <!-- <lable class="ban iconfont icon-shijian">{{item.switch_name}}</label> -->
+</view>

@@ -1,0 +1,107 @@
+//wxss:
+
+body{
+background-color: #999;
+}
+.cont {
+width: 100%;
+text-align: center;
+}
+.con_names{
+font-size: 28rpx;
+color: #868686;
+}
+image {
+width: 144rpx;
+height: 137rpx;
+display:block;
+margin: 134rpx auto 24rpx;
+}
+
+.writes{
+width: 90%;
+position: absolute;
+left: 30rpx;
+top: 75rpx;
+font-size: 35rpx;
+border-bottom: 1px solid #ECECEC;
+}
+.btn_class{
+margin-bottom: 20rpx;
+position: relative;
+text-align: center;
+background-color:#fff;
+width: 100%;
+height: 250rpx;
+}
+
+
+
+/*订单类型 */
+.order_base{
+position: absolute;
+left: 30rpx;
+top: 20rpx;
+font-size: 30rpx;
+color: #2a2a2a;
+}
+.text_daiban{
+font-size: 30rpx;
+color: #896A0D;
+}
+.ban{
+position: absolute;
+right: 50rpx;
+top: 20rpx;
+font-size: 30rpx;
+color: #9CDEC5;
+}
+.bans{
+position: absolute;
+right: 50rpx;
+top: 20rpx;
+font-size: 30rpx;
+color: #A8A8A8;
+}
+/*下单时间 */
+.dates{
+position: absolute;
+left: 30rpx;
+top: 90rpx;
+font-size: 30rpx;
+color: #2a2a2a;
+}
+/*车型信息 */
+.car_base{
+position: absolute;
+left: 30rpx;
+top: 140rpx;
+color: #2a2a2a;
+display: block;
+font-size: 30rpx;
+}
+.inp_text{
+position: absolute;
+left: 150rpx;
+top: 0rpx;
+display: block;
+/* background-color: red; */
+text-align: left;
+width: 500rpx;
+white-space: nowrap;
+word-break: break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+font-size: 30rpx;
+color: #2a2a2a;
+}
+/*消费金额 */
+.money{
+position: absolute;
+left: 30rpx;
+top: 190rpx;
+color: #2a2a2a;
+font-size: 30rpx;
+}

@@ -10,7 +10,8 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
     indicatorDots: true,
-    autoplay: false,
+    autoplay: true,
+    circular:true,  // 衔接滑动
     interval: 5000,
     duration: 1000,
     navInfo: [
@@ -47,7 +48,8 @@ Page({
   _sendResourceList: function () {
     let that = this;
     //暂时写死列表数据
-    var resourceList = [{
+    var resourceList = [
+      {
       id: 1,
       coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/107b2290ee23b9c36e2be9e6eacd08f1.jpg",
       detailUrl: "03",
@@ -67,7 +69,91 @@ Page({
       detailUrl: "test",
       title: "【物理】中考成绩特惠向前“购”",
       desc: "力学、电学、声学、热学光学五大模块内容"
-    }
+      },
+      {
+        id: 2,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/compress/ba3e0851b378e2e842b6c46977c680d2.jpg",
+        detailUrl: "01",
+        title: "真空无法传声",
+        desc: "真空无法传声"
+      },
+      {
+        id: 3,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/fcb025ef862f5a9d7ce2d2a096b24291.jpg",
+        detailUrl: "test",
+        title: "【物理】中考成绩特惠向前“购”",
+        desc: "力学、电学、声学、热学光学五大模块内容"
+      },
+      {
+        id: 2,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/compress/ba3e0851b378e2e842b6c46977c680d2.jpg",
+        detailUrl: "01",
+        title: "真空无法传声",
+        desc: "真空无法传声"
+      },
+      {
+        id: 3,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/fcb025ef862f5a9d7ce2d2a096b24291.jpg",
+        detailUrl: "test",
+        title: "【物理】中考成绩特惠向前“购”",
+        desc: "力学、电学、声学、热学光学五大模块内容"
+      },
+      {
+        id: 2,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/compress/ba3e0851b378e2e842b6c46977c680d2.jpg",
+        detailUrl: "01",
+        title: "真空无法传声",
+        desc: "真空无法传声"
+      },
+      {
+        id: 3,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/fcb025ef862f5a9d7ce2d2a096b24291.jpg",
+        detailUrl: "test",
+        title: "【物理】中考成绩特惠向前“购”",
+        desc: "力学、电学、声学、热学光学五大模块内容"
+      },
+      {
+        id: 2,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/compress/ba3e0851b378e2e842b6c46977c680d2.jpg",
+        detailUrl: "01",
+        title: "真空无法传声",
+        desc: "真空无法传声"
+      },
+      {
+        id: 3,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/fcb025ef862f5a9d7ce2d2a096b24291.jpg",
+        detailUrl: "test",
+        title: "【物理】中考成绩特惠向前“购”",
+        desc: "力学、电学、声学、热学光学五大模块内容"
+      },
+      {
+        id: 2,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/compress/ba3e0851b378e2e842b6c46977c680d2.jpg",
+        detailUrl: "01",
+        title: "真空无法传声",
+        desc: "真空无法传声"
+      },
+      {
+        id: 3,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/fcb025ef862f5a9d7ce2d2a096b24291.jpg",
+        detailUrl: "test",
+        title: "【物理】中考成绩特惠向前“购”",
+        desc: "力学、电学、声学、热学光学五大模块内容"
+      },
+      {
+        id: 2,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/compress/ba3e0851b378e2e842b6c46977c680d2.jpg",
+        detailUrl: "01",
+        title: "真空无法传声",
+        desc: "真空无法传声"
+      },
+      {
+        id: 3,
+        coverImg: "http://wechatapppro-1252524126.file.myqcloud.com/app3f5mFexL3183/image/fcb025ef862f5a9d7ce2d2a096b24291.jpg",
+        detailUrl: "test",
+        title: "【物理】中考成绩特惠向前“购”",
+        desc: "力学、电学、声学、热学光学五大模块内容"
+      }
     ];
     that.setData({
       /*
@@ -94,8 +180,24 @@ Page({
     //   }
     // });
   },
+  // 下拉加载更多
+  onPullDownRefresh: function () {
+    // 开始刷新
+    wx.startPullDownRefresh()
+    // 停止刷新
+    wx.stopPullDownRefresh()
+  },
   swiperIndex: function (e) {
     console.log('item：', e.target.dataset)
     console.log('item：', e.target.dataset.courseid)
+  },
+  turnToPage: function (event) {
+    console.log(event)
+    var params = event.currentTarget.dataset;
+    // 跳转2
+    // wx.navigateTo({
+    //   url: '../resourceList/resourceList'
+    // })
+    // app.turnToPage(params.url + "?id=" + params.id, 0);
   }
 })

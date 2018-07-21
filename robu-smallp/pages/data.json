@@ -1,0 +1,98 @@
+{
+  "dateDay": "08月07日 星期一",
+  "top_stories": [
+    {
+      "id": 9560543,
+      "title": "对于嘲讽对手的行为，只能说「电子竞技不相信眼泪」",
+      "image": "https://pic1.zhimg.com/v2-c7a203de0c6a6d451d44ad1a415cc6b0.jpg",
+      "type": 0,
+      "ga_prefix": "080717"
+    },
+    {
+      "id": 9560143,
+      "title": "知道苹果公司有钱，但没想到美国政府还欠它 526 亿美元",
+      "image": "https://pic2.zhimg.com/v2-0d313023bc8c4b3f2e68ea65aeeebc35.jpg",
+      "type": 0,
+      "ga_prefix": "080713"
+    },
+    {
+      "id": 9556786,
+      "title": "想要做好尽职调查，必须细致到连企业的厕所也不能放过",
+      "image": "https://pic4.zhimg.com/v2-8efe699a0ad605d935fe53a5d2d3d147.jpg",
+      "type": 0,
+      "ga_prefix": "080711"
+    },
+    {
+      "id": 9559601,
+      "title": "博尔特在北京奥运的表演仿佛就在昨天，现在已是传奇谢幕",
+      "image": "https://pic2.zhimg.com/v2-49c4ccda5bc1fb4fc10b2529a563e3dd.jpg",
+      "type": 0,
+      "ga_prefix": "080707"
+    },
+    {
+      "id": 9552053,
+      "title": "满眼二维码，在移动支付上银行已经输了？其实混战才开始",
+      "image": "https://pic1.zhimg.com/v2-04123bb20c6637a15dcd1eac71c4f6e8.jpg",
+      "type": 0,
+      "ga_prefix": "080709"
+    }
+  ],
+  "stories": [
+    {
+      "id": 9560228,
+      "title": "被吓得头皮发麻、脊背发凉……但真的太「爽」了",
+      "type": 0,
+      "images": [
+        "https://pic1.zhimg.com/v2-31792fa6be283373ce3b8574940342d8.jpg"
+      ],
+      "ga_prefix": "080721"
+    },
+    {
+      "id": 9559747,
+      "title": "「孩子哭别管他，哭累了就睡了」，这种方法真的不行",
+      "type": 0,
+      "images": [
+        "https://pic2.zhimg.com/v2-b1f5f7c5384a682fe07dd2a573541bb9.jpg"
+      ],
+      "ga_prefix": "080710"
+    },
+    {
+      "id": 9552053,
+      "title": "满眼二维码，在移动支付上银行已经输了？其实混战才开始",
+      "type": 0,
+      "images": [
+        "https://pic3.zhimg.com/v2-c191427cc66d14db722d2875484b362a.jpg"
+      ],
+      "ga_prefix": "080709"
+    },
+    {
+      "id": 9559040,
+      "title": "好好的一个年轻人，怎么就……中了回锅肉的毒",
+      "type": 0,
+      "images": [
+        "https://pic2.zhimg.com/v2-67ec769321d8c64e05c9adde287ed711.jpg"
+      ],
+      "ga_prefix": "080708"
+    },
+    {
+      "multipic": true,
+      "id": 9559601,
+      "title": "博尔特在北京奥运的表演仿佛就在昨天，现在已是传奇谢幕",
+      "type": 0,
+      "ga_prefix": "080707",
+      "images": [
+        "https://pic4.zhimg.com/v2-676d2821c51bd66f05a1ffcea167fe1b.jpg"
+      ]
+    },
+    {
+      "id": 9558150,
+      "title": "这里是广告 · 蜀道有栈桥何惧上青天",
+      "type": 0,
+      "images": [
+        "https://pic1.zhimg.com/v2-4fd0510d4ef0766c07605e1bd3c6bfc4.jpg"
+      ],
+      "ga_prefix": "080706"
+    }
+  ],
+  "date": "20170807"
+}

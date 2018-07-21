@@ -1,0 +1,138 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+ 
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 100px;
+}
+
+.button_hover {
+  background-color: red;
+}
+
+.other-button-hover {
+  background-color: blue;
+}
+
+.other-button-login {
+  margin-top: 100px;
+}
+
+.c2 {
+  color: #353535;
+}
+
+.c3 {
+  color: #888;
+}
+
+.t1 {
+  font-size: 2rem;
+}
+
+.t2 {
+  font-size: 1rem;
+}
+
+.t3 {
+  font-size: 24rem;
+}
+
+.t4 {
+  font-size: 0.22rem;
+}
+
+.memberPart {
+  padding: 0 0.3rem;
+  background-color: #fff !important;
+  box-shadow: 0 0.02rem 0.02rem #e7e7e7;
+}
+
+.contentList-title, .partTitle {
+  line-height: 0.8rem;
+  height: 0.8rem;
+}
+
+.partTitle {
+  float: left;
+  max-width: 5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content-pic {
+  float: left;
+  width: 1.6rem;
+  height: 1.2rem;
+  border-radius: 0.08rem;
+  border-top-left-radius: 0.08rem;
+  border-top-right-radius: 0.08rem;
+  border-bottom-right-radius: 0.08rem;
+  border-bottom-left-radius: 0.08rem;
+}
+
+.content-pic-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 1.6rem;
+  height: 1.2rem;
+  margin-right: 0.2rem;
+}
+
+.content-info {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.columnist-desc, .columnist-title {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.columnist-desc {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  margin-bottom: 0.2rem;
+}
+
+.columnist-title {
+  display: block;
+  max-height: 0.72rem;
+  line-height: 0.36rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+
+.container {
+  min-height: 100%;
+  background: #e0e0e6;
+}
+
+.container, .container-width-limit {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}

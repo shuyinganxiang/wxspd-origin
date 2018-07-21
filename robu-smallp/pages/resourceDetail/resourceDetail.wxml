@@ -1,0 +1,22 @@
+<view class="goods-detail-wrap">
+  <import src="../../components/wxParse/wxParse.wxml" />
+  <view class="goods-detail-nav">
+    <label>{{resourceDetail.title}}</label>
+  </view>
+  <view class="goods-detail-content">
+    <!--日期显示 -->
+    <view style="margin-top:38px;margin-left:13px;">
+      <label class="goods-detail-time">{{resourceDetail.createdTime}}</label>
+    </view>
+    <!--商品详情图片 -->
+    <view class="goods-cover-container">
+      <image src="{{resourceDetail.coverImg}}"></image>
+    </view>
+  </view>
+
+  <!-- 购买 -->
+  <view class="goods-bottom-opt" wx:if="{{!resourceDetail.isPay}}">
+    <button type="primary" style="width: 70%;" bindtap="payResource">购买：￥1.50</button>
+  </view>
+  <!-- <web-view src="https://smartbox.viewshare.cn/images/01/story_html5.html"> </web-view> -->
+</view>
