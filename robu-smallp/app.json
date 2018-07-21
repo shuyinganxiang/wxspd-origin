@@ -1,7 +1,9 @@
 {
   "pages":[
+    "pages/myInfo/myInfo",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/message/message"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,7 +11,7 @@
     "navigationBarTitleText": "robu",
     "navigationBarTextStyle":"black",
     "backgroundColorTop":"#c0f",
-    "backgroundColor":"#c0f"
+    "backgroundColor":"#ccc"
   },
   "tabBar": {
     "list": [
@@ -20,15 +22,25 @@
         "text": "首页"
       },
       {
+        "iconPath": "img/5af1687504131.png",
+        "selectedIconPath": "img/5af168750418f.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
         "iconPath": "img/5af168751c11d.png",
-        "selectedIconPath": "img/5af16874e20b2.png",
+        "selectedIconPath": "img/5af168751c16d.png",
+        "pagePath": "pages/myInfo/myInfo",
+        "text": "我的"
+      },
+      {
         "pagePath": "pages/logs/logs",
         "text": "日志"
       }
     ],
-    "color": "#666",
-    "selectedColor": "#c0f",
-    "backgroundColor": "#eee",
+    "color": "#999",
+    "selectedColor": "#9BDE56",
+    "backgroundColor": "#fff",
     "borderStyle": "white"
   },
   "debug": true

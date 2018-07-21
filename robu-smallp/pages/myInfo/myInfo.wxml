@@ -1,0 +1,26 @@
+<!--logs.wxml-->
+<view class="container user">
+  <view class='user-header' catchtap='userInfo'>
+    <label class="empty-span"></label>
+    <!-- 图片 58*58 -->
+    <image src="http://img.zhichiwangluo.com/zc_app_default_photo.png" class="user-icon"/>
+    <label class="user-txt">{{user.name?username:'用户名'}}</label>
+    <!-- 用户信息 header icon -->
+    <label class="ico-moon icon-rightarrow"></label>
+  </view>
+  <view class='info-list' wx:for="{{infoList}}" wx:key="index" >
+    <view class='item'>
+      <label class="ico-moon icon-l {{item.icon}}"></label>
+      <text class="user-txt">{{item.txt}}</text>
+      <label class="ico-moon icon-rightarrow icon-r"></label>
+    </view>
+  </view>
+  <view class='info-list-back' >
+    <image class='back-img' src='http://img.weiye.me/zcimgdir/album/file_58eee3269072e.png' />
+    <text class="txt">意见反馈</text>
+  </view>
+  <view style="height:20px;width:100%;overflow:hidden;margin-top:10px;">
+    <image style="width:80%;height:35px;margin:-15px 10% 0 10%;" src="http://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/tec-support.png"></image>
+  </view>
+   <!-- <button open-type="getUserInfo" bindgetuserinfo="userInfo">用户信息的获取</button> -->
+</view>
